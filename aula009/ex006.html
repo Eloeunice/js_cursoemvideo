@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style></style>
+</head>
+<body>
+    <H1>INICIANDO ESTUDOS DOM</H1>
+    <p>Usando o <strong> DOM </strong>em JS.</p>
+    <P>o dom não funciona no node, ele precisa de um navegador para funcionar</P>
+    <p>Aprendendo a usar o dom</p>
+    <div class="botao">Clique aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText)
+        p1.style.color = 'blue'
+        var d = window.document.querySelector(' div.botao')
+        d.style.color = 'green'
+
+    </script>
+</body>
+</html>
