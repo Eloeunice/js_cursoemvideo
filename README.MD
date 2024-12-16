@@ -1,0 +1,1 @@
+Anotações do curso Javascript do Curso em Vídeo
