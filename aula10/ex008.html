@@ -11,6 +11,7 @@
     <input type="number" name="texto1" id="texto1">
     <input type="number" name="texto2" id="texto2">
     <input type="button" value="somar" onclick=somar()>
+    <input type="button" value="multiplicar" onclick=multiplicar()>
     <div id="res">Resultado</div>
     <script>
         function somar () {
@@ -25,6 +26,19 @@
             var res = texto1 + texto2
             //Pega a divi res e aletra o texto dela pra ser o valor da váriavel res, que contem o resultado
             document.getElementById("res").innerText = "Resultado: " + res
+        }
+
+        function multiplicar () {
+            // Pegar os valores dentro de texto1 e texto2
+            var num1 = document.getElementById("texto1")
+            var num2 = document.getElementById("texto2")
+            // Multiplico esses valores e armazeno o resultado
+            var num11 = Number(num1.value)
+            var num22 = Number(num2.value)
+            var resultado =  num11 * num22
+            //Mostro esses VALORES AO APERTAR O BOTAO DE MULTIPLICAR
+            document.getElementById("res").innerText = "Resultado: " + resultado
+
         }
     </script>
 </body>
